@@ -16,6 +16,10 @@ Date: 25/2/2022
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./instructors.JPG">
+    <link rel="icon" type="JPG" sizes="32x32" href="./instructors.JPG">
+    <link rel="apple-touch-icon" sizes="180x180" href="./instructors.JPG">
+    <link rel="icon" sizes="192x192" href="./instructors.JPG">
 </head>
 
 <body>
@@ -26,8 +30,8 @@ Date: 25/2/2022
         <ul>
             <li><a href="./indexlab1.html">Home</a></li>
             <li><a href="./lessonslab1.html">Lessons</a></li>
-            <li><a href="#">Instructors</a></li>
-            <li><a href="#">Rentals</a></li>
+            <li><a href="./instructorslab1.html">Instructors</a></li>
+            <li><a href="./rentalslab1.html">Rentals</a></li>
             <li><a href="./contactlab1.html">Contact</a></li>
         </ul>
     </nav>
@@ -42,6 +46,36 @@ Date: 25/2/2022
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3834.2531663621785!2d108.23060451433656!3d16.052347144155217!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3142198021ee4d69%3A0x46476db0aa96889f!2sNAPA%20Global%20-%20Software%20Outsourcing%20%26%20Offshore%20Development!5e0!3m2!1svi!2s!4v1645802151653!5m2!1svi!2s"
                 width="600" height="450" class="map" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <div id="form">
+            <h2>Complete the form below and one of our staff members will contact you</h2>
+            <form class="form-grid">
+                <!-- Start Form -->
+                <fieldset>
+                    <legend>Customer Information</legend>
+                    <label for="fName">First Name:</label>
+                    <input type="text" name="fName" id="fName">
+                    <label for="lName">Last Name:</label>
+                    <input type="text" name="lName" id="lName">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email">
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone">
+                </fieldset>
+                <fieldset>
+                    <legend>Musical Interest</legend>
+                    <p>I am interested in:</p>
+                    <label for="guitarles"><input type="checkbox" name="interest" id="guitarles"
+                            value="Guitar Lessons">Guitar Lessons</label>
+                    <label for="piano"><input type="checkbox" name="interest" id="pianoles" value="Piano Lessons">Piano
+                        Lessons</label>
+                    <label for="violin"><input type="checkbox" name="interest" id="violinles"
+                            value="Violin Lessons">Violin Lessons</label>
+                    <label for="rent"><input type="checkbox" name="interest" id="rent" value="Rental Equipment">Rental
+                        Equipment</label>
+                </fieldset>
+                <button type="submit" id="submit" value="submit" class="btn">Submit</button>
+            </form>
         </div>
     </main>
     <footer>
