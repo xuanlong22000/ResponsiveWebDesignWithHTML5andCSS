@@ -98,6 +98,36 @@ main h3 {
     border: 1px solid aqua;
 }
 
+/* Style rules for table */
+table {
+    border: 1px solid aquamarine;
+    border-collapse: collapse;
+    margin: 0 auto;
+    width: 100%;
+}
+
+caption {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 1%;
+}
+
+th,
+td {
+    border: 1px solid aquamarine;
+    padding: 2%;
+}
+
+th {
+    background-color: aquamarine;
+    color: black;
+    font-size: 1.15em;
+}
+
+tr:nth-child(odd) {
+    background-color: aqua;
+}
+
 .round {
     border-radius: 6px;
 }
@@ -136,7 +166,35 @@ figcaption {
     font-size: 1.5em;
 }
 
-#contact {
+/* Style rules for form elements */
+fieldset,
+input,
+textarea {
+    margin-bottom: 2%;
+}
+
+fieldset legend {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+label {
+    display: block;
+    padding-top: 2%;
+}
+
+form #submit {
+    margin: 0 auto;
+    display: block;
+    padding: 2%;
+    background-color: palevioletred;
+    color: aqua;
+    font-size: 1.25em;
+    border-radius: 10px;
+}
+
+#contact,
+#price h2 {
     text-align: center;
 }
 
@@ -194,6 +252,11 @@ print {
     aside {
         grid-column: 1 / span 2;
     }
+
+    form {
+        width: 70%;
+        margin: 0 auto;
+    }
 }
 
 /* Desktop */
@@ -225,6 +288,20 @@ print {
     aside {
         grid-column: 1 / span 3;
         font-size: 2em;
+    }
+
+    table {
+        width: 70%;
+    }
+
+    .form-grid {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 20px;
+    }
+
+    .btn {
+        grid-column: 1 / span 2;
     }
 }
 

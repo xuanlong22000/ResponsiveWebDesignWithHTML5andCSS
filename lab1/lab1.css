@@ -140,7 +140,8 @@ figcaption {
 }
 
 #contact,
-#rental h2 {
+#rental h2,
+#form h2 {
     text-align: center;
 }
 
@@ -233,9 +234,6 @@ label {
     font-size: 1em;
 }
 
-#form h2 {
-    text-align: center;
-}
 
 /* Style rules for footer content */
 footer {
