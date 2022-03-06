@@ -8,6 +8,7 @@ img,
 aside,
 figure,
 figcaption,
+video,
 ul,
 h1 {
     margin: 0;
@@ -20,7 +21,8 @@ body {
     background-color: #f6eee4;
 }
 
-img {
+img,
+video {
     max-width: 100%;
     display: block;
 }

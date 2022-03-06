@@ -23,10 +23,23 @@ Date: 25/2/2022
 </head>
 
 <body>
+    <!-- Mobile Nav -->
+    <nav class="mobile-nav">
+        <div id="menu-links">
+            <a href="./indexlab1.html">Home</a>
+            <a href="./lessonslab1.html">Lessons</a>
+            <a href="./instructorslab1.html">Instructors</a>
+            <a href="./rentalslab1.html">Rentals</a>
+            <a href="./contactlab1.html">Contact Us</a>
+        </div>
+        <a class="menu-icon" onclick="hamburger()">
+            <div>&#9776;</div>
+        </a>
+    </nav>
     <header>
         <h1><span class="tab-desk">&#9836;</span> Strike a Chord <span class="tab-desk">&#9836;</span></h1>
     </header>
-    <nav>
+    <nav class="tab-desk">
         <ul>
             <li><a href="./indexlab1.html">Home</a></li>
             <li><a href="./lessonslab1.html">Lessons</a></li>
@@ -63,6 +76,10 @@ Date: 25/2/2022
                 harmony, and tone. Learning how to play the piano helps develop hand-
                 eye coordination and self-confidence.
             </p>
+            <h4>Piano Spring Performance</h4>
+            <audio controls>
+                <source src="./Yeu-Mot-Nguoi-Co-Le-Lou-Hoang-Miu-Le.mp3" type="audio/mp3">
+            </audio>
         </section>
         <section id="guitar">
             <h3>Guitar Lessons</h3>
@@ -74,6 +91,10 @@ Date: 25/2/2022
                 new tips and techniques from experienced instructors. We also have a
                 rock band program that you can join!
             </p>
+            <h4>Guitar Winter Performance</h4>
+            <audio controls>
+                <source src="./Yeu-Mot-Nguoi-Co-Le-Lou-Hoang-Miu-Le.mp3" type="audio/mp3">
+            </audio>
         </section>
         <section id="violin">
             <h3>Violin Lessons</h3>
@@ -85,12 +106,17 @@ Date: 25/2/2022
                 accomplish your musical goals. We work with you to create a customized
                 program, tailored to your needs.
             </p>
+            <h4>Violin Spring Performance</h4>
+            <audio controls>
+                <source src="./Yeu-Mot-Nguoi-Co-Le-Lou-Hoang-Miu-Le.mp3" type="audio/mp3">
+            </audio>
         </section>
     </main>
     <footer>
         <p>&copy; Copyright 2021. All Rights Reserved.</p>
         <p><a href="lessons@strikeachord.net">lessons@strikeachord.net</a></p>
     </footer>
+    <script src="./script.js"></script>
 </body>
 
 </html>
