@@ -10,7 +10,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
+    <meta name="description"
+        content="Contact us at (814)555-8989 or visit us at 8989 Rescue Drive, Ocala, FL for more information.">
+    <title>Contact Us - Location | Wild Rescues.</title>
     <link rel="stylesheet" href="./lab2.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,7 +25,23 @@
 </head>
 
 <body>
+    <!-- Skip to Content Link -->
+    <a class="skip" href="#content">Skip to Content</a>
     <div class="wrapper">
+        <!-- Mobile Nav -->
+        <nav class="mobile-nav">
+            <div id="nav-links">
+                <a href="./indexlab2.html">Home</a>
+                <a href="./aboutlab2.html">About Us</a>
+                <a href="./partnershiplab2.html">Partnership</a>
+                <a href="./gallerylab2.html">Gallery</a>
+                <a href="./faqslab2.html">FAQs</a>
+                <a href="./contactlab2.html">Contact Us</a>
+            </div>
+            <a class="nav-icon" onclick="hamburger()">
+                <div id="icon">&#9776;</div>
+            </a>
+        </nav>
         <header>
             <div class="tab-desk">
                 <a href=""><img src="./piano-lesson.JPG" alt="rescued baby hawk"></a>
@@ -33,18 +51,18 @@
                 <h3>Rescue. Rehabilitate. Release.</h3>
             </div>
         </header>
-        <nav>
+        <nav class="tab-desk">
             <ul>
                 <li><a href="./indexlab2.html">Home</a> </li>
                 <li><a href="./aboutlab2.html">About Us</a></li>
                 <li><a href="./partnershiplab2.html">Partnership</a></li>
                 <li><a href="./gallerylab2.html">Gallery</a></li>
-                <li><a href="#">FAQs</a></li>
+                <li><a href="./faqslab2.html">FAQs</a></li>
                 <li><a href="./contactlab2.html">Contact</a></li>
             </ul>
         </nav>
         <!-- Use the main area to add the main content to the webpage -->
-        <main>
+        <main id="content">
             <div id="contact">
                 <h2>You can reach us at:</h2>
                 <p class="tel-link round mobile"><a href="#">(814) 555-8989</a></p>
@@ -89,10 +107,17 @@
             </div>
         </main>
         <footer>
-            <p>&copy; Copyright 2021. All Rights Reserved.</p>
-            <p><a href="#">contact@wildrescues.net</a></p>
+            <div class="copyright">
+                <p>&copy; Copyright 2021. All Rights Reserved.</p>
+                <p><a href="#">contact@wildrescues.net</a></p>
+            </div>
+            <div class="social">
+                <a href="https://www.facebook.com"><img src="./FacebookIcon.JPG" alt="Facebook logo"></a>
+                <a href="https://www.twitter.com"><img src="./TwitterIcon.JPG" alt="Twitter logo"></a>
+            </div>
         </footer>
     </div>
+    <script src="./script.js"></script>
 
 </body>
 

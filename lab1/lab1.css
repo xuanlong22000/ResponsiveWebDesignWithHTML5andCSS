@@ -241,17 +241,32 @@ label {
     font-size: 1em;
 }
 
+/* Tablet Viewport: Style rules for footer area */
+.copyright {
+    float: left;
+    width: 65%;
+}
+
+.social {
+    float: right;
+    width: 25%;
+}
 
 /* Style rules for footer content */
 footer {
     text-align: center;
-    font-size: 0.65em;
+    font-size: 1.25em;
     clear: left;
 }
 
 footer a {
     color: #4645a8;
     text-decoration: none;
+}
+
+.social img {
+    display: inline-block;
+    padding: 4%;
 }
 
 /* Media Query for Tablet Viewport */

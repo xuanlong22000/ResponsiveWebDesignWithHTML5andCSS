@@ -27,6 +27,23 @@ video {
     display: block;
 }
 
+/* Style rules for skip navigation link */
+.skip {
+    position: absolute;
+    left: -999px;
+}
+
+.skip:focus {
+    color: #fff;
+    background-color: #2a1f14;
+    text-decoration: none;
+    padding: 0.5%;
+    top: auto;
+    left: auto;
+    right: 1px;
+    z-index: 1;
+}
+
 /*Style rules for mobile viewport*/
 /*Style rules to show mobile class and hide tab-desk class*/
 .mobile,
@@ -35,7 +52,8 @@ video {
 }
 
 .tab-desk,
-.desktop {
+.desktop,
+#nav-links {
     display: none;
 }
 
@@ -44,6 +62,7 @@ video {
     padding: 2%;
     text-align: center;
     font-family: 'Emblema One', cursive;
+    margin: 2% 0 0 3%;
 }
 
 .mobile h3 {
@@ -63,25 +82,28 @@ nav {
     background-color: #2a1f14;
 }
 
-nav ul {
-    list-style-type: none;
-
+.mobile-nav a {
+    color: #fff;
     text-align: center;
-}
-
-nav li {
-    display: block;
-    font-size: 1.5em;
-    font-family: Geneva, Arial, sans-serif;
-    font-weight: bold;
-    border-top: 0.5px solid #f6eee4;
-}
-
-nav li a {
-    display: block;
-    color: #f6eee4;
-    padding: 0.5em 2em;
+    font-size: 2em;
     text-decoration: none;
+    padding: 3%;
+    display: block;
+}
+
+.mobile-nav a.nav-icon {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #f6eee4;
+    padding: 2%;
+}
+
+.nav-icon div {
+    height: 40px;
+    width: 40px;
+    color: #2a1f14;
 }
 
 /*Style rules for main content*/
@@ -161,6 +183,21 @@ figcaption {
     font-weight: bold;
 }
 
+#questions p {
+    cursor: pointer;
+}
+
+#answer {
+    text-align: center;
+    font-weight: bold;
+    width: 80%;
+    margin: 0 auto;
+}
+
+#answer h2 {
+    display: none;
+}
+
 /* Style rules for form elements */
 fieldset,
 input,
@@ -191,7 +228,7 @@ form #submit {
 /*Style rules for footer content*/
 footer {
     text-align: center;
-    font-size: 0.85em;
+    font-size: 1.25em;
     background-color: #2a1f14;
     color: #f6eee4;
     padding: 1% 0%;
@@ -200,7 +237,11 @@ footer {
 footer a {
     color: #f3e6d8;
     text-decoration: none;
+}
 
+.social img {
+    display: inline-block;
+    padding: 4%;
 }
 
 /* Media Query for Tablet Viewport */
@@ -212,18 +253,29 @@ print {
         display: block;
     }
 
-    .mobile {
+    .mobile,
+    .mobile-nav {
         display: none;
     }
 
     /* Tablet Viewport: Style rules for nav area */
+    nav ul {
+        list-style-type: none;
+        text-align: center;
+    }
+
     nav li {
+        font-family: Geneva, Arial, sans-serif;
+        font-weight: bold;
         border-top: none;
         display: inline-block;
         font-size: 1.25em;
     }
 
     nav li a {
+        display: block;
+        color: #f6eee4;
+        text-decoration: none;
         padding: 0.5em;
     }
 
@@ -241,6 +293,21 @@ print {
     form {
         width: 70%;
         margin: 0 auto;
+    }
+
+    /* Tablet Viewport: Style rules for footer area */
+    footer {
+        overflow: auto;
+    }
+
+    .copyright {
+        float: left;
+        width: 65%;
+    }
+
+    .social {
+        float: right;
+        width: 25%;
     }
 }
 

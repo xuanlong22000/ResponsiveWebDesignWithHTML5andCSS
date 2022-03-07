@@ -10,7 +10,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Book Ticket</title>
+    <meta name="description" content="Welcome to book ticket">
+    <title>Event | Ticket</title>
     <link rel="stylesheet" href="./lab3.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,11 +24,25 @@
 </head>
 
 <body>
+    <!-- Skip to Content Link -->
+    <a class="skip" href="#content">Skip to Content</a>
+    <nav class="mobile-nav">
+        <div id="menu-links">
+            <a href="./indexlab3.html">Home</a>
+            <a href="./bookticketlab3.html">Book ticket</a>
+            <a href="./pricelab3.html">Price</a>
+            <a href="./contactlab3.html">Contact</a>
+            <a href="./supportlab3.html">Support</a>
+        </div>
+        <a class="menu-icon" onclick="hamburger()">
+            <div>&#9776;</div>
+        </a>
+    </nav>
     <header>
         <h1>&#9749; Event Of Class &#9749;</h1>
         <h1>Welcome to Piano Clubs</h1>
     </header>
-    <nav>
+    <nav class="tab-desk">
         <ul>
             <li><a href="./indexlab3.html">Home</a></li>
             <li><a href="./bookticketlab3.html">Book ticket</a></li>
@@ -68,9 +83,16 @@
 
     </main>
     <footer>
-        <p>&copy; Copyright 2022. All Rights Reserved.</p>
-        <p><a href="mailto:contact@long.net">contact@long.net</a></p>
+        <div class="copyright">
+            <p>&copy; Copyright 2022. All Rights Reserved.</p>
+            <p><a href="mailto:contact@long.net">contact@long.net</a></p>
+        </div>
+        <div class="social">
+            <a href="https://www.facebook.com"><img src="./FacebookIcon.JPG" alt="Facebook logo"></a>
+            <a href="https://www.twitter.com"><img src="./TwitterIcon.JPG" alt="Twitter logo"></a>
+        </div>
     </footer>
+    <script src="./script.js"></script>
 </body>
 
 </html>
