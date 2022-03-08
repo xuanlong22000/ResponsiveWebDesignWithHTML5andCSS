@@ -1,0 +1,20 @@
+.hero {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(./piano-lesson.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    padding-bottom: 110%;
+}
+
+.welcome {
+    position: absolute;
+    top: 40%;
+}
+
+.display-1 {
+    font-size: 4em;
+}
+
+.bg-brown {
+    background-color: #2a1f14;
+}
